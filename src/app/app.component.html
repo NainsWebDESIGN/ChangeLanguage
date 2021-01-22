@@ -2,6 +2,12 @@
 <br>
 {{"英雄" | app: lang.LangObj}}
 <br>
+{{"請按按看語系轉換" | app: lang.LangObj}}
 <br>
-<button *ngIf="!Lang" (click)="changeLang('en-us')">英文</button>
-<button *ngIf="Lang" (click)="changeLang('zh-tw')">Chinese</button>
+{{"不然小政會打爆你" | app: lang.LangObj}}
+<div class="rightTop">
+    <button (click)="changeLang('en-us')">英文</button>
+    <button (click)="changeLang('zh-tw')">中文</button>
+    <button (click)="changeLang('en-ta')">泰文</button>
+    <button (click)="changeLang('en-jp')">日文</button>
+</div>
