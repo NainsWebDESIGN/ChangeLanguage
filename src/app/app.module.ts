@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 // pipe
-import { AppPipe } from './pipe/app.pipe';
+import { AppPipe, TsLang } from './pipe/app.pipe';
 
 // service
 import { LanguageService } from '@service/Language.service';
@@ -15,7 +15,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AppPipe
+    AppPipe,
+    TsLang
   ],
   imports: [
     BrowserModule,
