@@ -10,7 +10,7 @@ import { TSlang } from './ts/Ts.Lang';
 })
 export class AppComponent implements OnInit {
   Language = {};
-  constructor(public lang: LanguageService,) { }
+  constructor(public lang: LanguageService) { }
   changeLang(_Lang: string) {
     this.lang.getLang(_Lang);
   }
