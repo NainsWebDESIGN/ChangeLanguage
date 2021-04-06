@@ -12,6 +12,7 @@ import { LanguageService } from '@service/Language.service';
 import { AppComponent } from './app.component';
 
 
+export const PRESET: PreSet = _PreSet;
 @NgModule({
   declarations: [
     AppComponent,

@@ -16,11 +16,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": ["styles.css"],
-      "scripts": [
-        {
-          "input": "app/config/config.js"
-        }
-      ],
+      "scripts": [{ "input": "app/config/config.js" }],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -29,9 +25,7 @@
     }
   ],
   "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
+    "protractor": { "config": "./protractor.conf.js" }
   },
   "lint": [
     {
@@ -47,15 +41,9 @@
       "exclude": "**/node_modules/**"
     }
   ],
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
+  "test": { "karma": { "config": "./karma.conf.js" } },
   "defaults": {
     "styleExt": "css",
-    "component": {
-      "spec": false
-    }
+    "component": { "spec": false }
   }
 }

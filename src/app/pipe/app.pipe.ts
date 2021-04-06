@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { TSlang } from '../ts/Ts.Lang';
+import { Translate } from '../ts/Ts.Lang';
 
 @Pipe({
   name: 'app'
@@ -17,7 +17,7 @@ export class AppPipe implements PipeTransform {
 export class TsLang implements PipeTransform {
   constructor() { }
   transform(Value: string, type: string) {
-    const basis = TSlang[type];
+    const basis = Translate[type];
     return basis[Value] || Value;
   }
 }

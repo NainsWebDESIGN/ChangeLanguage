@@ -1,6 +1,6 @@
 import { LanguageService } from '@service/Language.service';
 import { Component, OnInit } from '@angular/core';
-import { TSlang } from './ts/Ts.Lang';
+import { Translate } from './ts/Ts.Lang';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     this.lang.getLang(_Lang);
   }
   AlertSome() {
-    alert(TSlang[this.lang.Language]['AlertSome']);
+    alert(Translate[this.lang.Language]['AlertSome']);
   }
   ngOnInit() {
   }
