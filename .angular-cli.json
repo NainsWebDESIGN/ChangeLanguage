@@ -1,13 +1,13 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "test-language"
+    "name": "Translation"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
-      "assets": ["assets", "favicon.ico"],
+      "outDir": "Translation",
+      "assets": ["assets", "favicon.ico", "config"],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -16,7 +16,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": ["styles.css"],
-      "scripts": [{ "input": "app/config/config.js" }],
+      "scripts": [{ "input": "config/config.js" }],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
